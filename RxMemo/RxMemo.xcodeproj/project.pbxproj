@@ -14,6 +14,9 @@
 		E396BA962529CD3600FE00FA /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E396BA942529CD3600FE00FA /* RxMemo.xcdatamodeld */; };
 		E396BA982529CD3700FE00FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E396BA972529CD3700FE00FA /* Assets.xcassets */; };
 		E396BA9B2529CD3700FE00FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E396BA992529CD3700FE00FA /* LaunchScreen.storyboard */; };
+		E396BABF2529F0AB00FE00FA /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E396BABE2529F0AB00FE00FA /* Memo.swift */; };
+		E396BAC22529F16A00FE00FA /* MemoStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E396BAC12529F16A00FE00FA /* MemoStorageType.swift */; };
+		E396BAC72529F25E00FE00FA /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E396BAC62529F25E00FE00FA /* MemoryStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		E396BA972529CD3700FE00FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E396BA9A2529CD3700FE00FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E396BA9C2529CD3700FE00FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E396BABE2529F0AB00FE00FA /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		E396BAC12529F16A00FE00FA /* MemoStorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStorageType.swift; sourceTree = "<group>"; };
+		E396BAC62529F25E00FE00FA /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
 		F92430159FB4D4A2E99BA587 /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +95,6 @@
 				E396BA8D2529CD3600FE00FA /* SceneDelegate.swift */,
 				E396BA972529CD3700FE00FA /* Assets.xcassets */,
 				E396BA9C2529CD3700FE00FA /* Info.plist */,
-				E396BA942529CD3600FE00FA /* RxMemo.xcdatamodeld */,
 			);
 			path = RxMemo;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 		E396BAB72529D00000FE00FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E396BABE2529F0AB00FE00FA /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +126,9 @@
 		E396BABA2529D05200FE00FA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E396BAC52529F23800FE00FA /* CoreDataStorage */,
+				E396BAC42529F21B00FE00FA /* MemoryStorage */,
+				E396BAC12529F16A00FE00FA /* MemoStorageType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -129,6 +138,22 @@
 			children = (
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		E396BAC42529F21B00FE00FA /* MemoryStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E396BAC62529F25E00FE00FA /* MemoryStorage.swift */,
+			);
+			path = MemoryStorage;
+			sourceTree = "<group>";
+		};
+		E396BAC52529F23800FE00FA /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E396BA942529CD3600FE00FA /* RxMemo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E396BAC72529F25E00FE00FA /* MemoryStorage.swift in Sources */,
 				E396BA8C2529CD3600FE00FA /* AppDelegate.swift in Sources */,
+				E396BAC22529F16A00FE00FA /* MemoStorageType.swift in Sources */,
 				E396BA8E2529CD3600FE00FA /* SceneDelegate.swift in Sources */,
 				E396BA962529CD3600FE00FA /* RxMemo.xcdatamodeld in Sources */,
+				E396BABF2529F0AB00FE00FA /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
